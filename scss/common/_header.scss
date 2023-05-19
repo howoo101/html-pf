@@ -1,0 +1,37 @@
+header {
+	width: 100%;
+	// 고정으로 준다. -> figure 부분 calc로 꽉채우기 위해
+	height: 120px;
+	padding: 50px 10% 20px;
+	// border: 1px solid red;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #ddd;
+
+	h1 {
+		a {
+			font: bold 24px/1 'arial';
+			color: #333;
+		}
+	}
+
+	ul {
+		display: flex;
+		gap: 20px;
+
+		&#gnb {
+			a {
+				font: bold 14px/1 'arial';
+				color: #777;
+			}
+		}
+
+		&.sns {
+			a {
+				font-size: 20px;
+				color: #888;
+			}
+		}
+	}
+}
